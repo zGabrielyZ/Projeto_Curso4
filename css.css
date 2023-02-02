@@ -1,0 +1,573 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    
+}
+
+*:focus{
+    outline: none;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    padding: 20px 2% 35px 2%;
+    height: 130px;
+}
+
+header .logo{
+    float: left;
+}
+
+nav.mobile{
+    display: none;
+    float: right;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-image: url(icon_menu.png);
+    
+    margin-top: 5%;
+}
+
+nav.mobile ul{
+    
+    left: 0;
+    top: 90px;
+    width: 100%;
+  
+    position: absolute;
+    background-color: white;
+    text-align: center;
+}
+nav.mobile ul li{
+    font-size: 23px;
+    color: black;
+    padding: 20px 0;
+}
+nav.mobile ul a{
+    text-decoration: none;
+}
+
+header nav.desktop{
+    float: right;
+    position: relative;
+    top:40px ;
+}
+
+header .desktop ul{
+    list-style-type: none;
+}
+header .desktop ul li{
+    font-size: 23px;
+    float: left;
+    padding: 0 30px;
+}
+header .desktop a{
+    color: black;
+    text-decoration: none;
+}
+
+
+section.banner{
+    width: 100%;
+    height: 600px;
+    min-height: 600px;
+    max-height: 800px;
+    background-color: black;
+    background-image: url(bg.jpg);
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+
+.text-banner{
+    padding: 100px;
+    
+    
+}
+
+.text-banner-single{
+    margin-top: 30px;
+    padding: 25px 30px;
+    width: 314px;
+    height: 65px;
+    color: white;
+    font-size: 27px;
+    background-image: url(box-text.png);
+    background-size: 100% 100%;
+    text-transform: uppercase;
+}
+
+
+.text-banner-single:nth-of-type(1){
+    padding: 25px 30px;
+}
+.text-banner-single:nth-of-type(2){
+    width: 225px;
+    position: relative;
+    right: 10px;
+}
+
+.text-banner-single:nth-of-type(3){
+    width: 175px;
+    position: relative;
+    right: 15px;
+}
+.text-banner-single:nth-of-type(4){
+   width: 320px;
+   height: 65px;
+   background-image: url(box-white-text.png);
+   color: black;
+   position: relative;
+   right: 30px;
+   font-size: 20px;
+}
+
+.line{
+    position: relative;
+    text-align: center;
+    
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+section.veiculos-destaque{
+    padding: 90px 2%;
+}
+section.veiculos-destaque .line  > h2{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 27px;
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 0 20px;
+}
+
+.ln1{
+    position: absolute;
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    top: 15px;
+    
+}
+
+
+section.veiculos-destaque .container{
+    max-width: 1000px;
+    padding: 40px 0;
+    
+}
+
+.vitrine{
+    float: left;
+    width: calc(100% / 3);
+    
+}
+
+.carro{
+    width: 100%;
+    padding-top: 100%;
+    background-size: 100% 100%;
+    border: 8px solid white;
+}
+
+.info-carro{
+   position: relative;
+    top: 80px;
+}
+
+.half1{
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 90px 0;
+    background-color: #242424;
+    color: white;
+}
+
+.half1-wrapper{
+    display: inline-block;
+    text-align: justify;
+}
+.half1-wrapper > ul > li{
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: 15px;
+}
+
+.half1-wrapper h2{
+    font-weight: normal;
+    font-size: 32px;
+}
+.half1-wrapper ul{
+    list-style-position: inside;
+    margin-top: 20px;
+}
+
+.btn1{
+    background-color: rgba(255, 0, 0, 0.781);
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    padding-top: 12.5px;
+    margin: 20px 10px;
+    display: inline-block;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 2px 2px 3px 1px  gray;
+}
+.btn1:hover{
+    background-color: rgb(255, 0, 0);
+    box-shadow: 4px 4px 3px 1px  gray;
+}
+
+.half2{
+    float: left;
+    width: 50%;
+    
+    text-align: center;
+    padding: 64.5px 0;
+    background-color: #cf0707a9;
+    color: white;
+     
+}
+.half2 h2{
+    font-weight: normal;
+    font-size: 32px;
+}
+.half2 .depoimento-single{
+    margin-top: 19px;
+    padding-left: 50px;
+}
+.half2 .depoimento-single p{
+    font-size: 24px;
+    
+}
+
+.navegation{
+    margin-top: 78px;
+    float: left;
+}
+.navegation img{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.nome-d{
+    float: left;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+.formulario{
+    padding: 60px 0;
+    text-align: center;
+    
+    
+   
+}
+
+.formulario .container{
+    
+    text-align: center;
+    max-width: 750px;
+}
+
+
+.formulario .line{
+ display: inline-block;   
+ width: 26%;
+ background-color: black;
+ height: 2px;
+ position: absolute;
+ padding-left: 100px;
+ margin: 25px -168px;
+    
+}
+
+.formulario h2{
+ position: relative;
+ display: inline-block;   
+ font-size: 30px;
+ font-weight: bold;
+ text-transform: uppercase;
+ background-color: white;
+ padding: 10px;
+
+}
+
+
+form{
+    padding-top:10px;
+    
+    
+    
+    
+}
+
+input{
+    color: #ccc;
+    border: 1px solid rgba(200, 200, 200, 1);
+    padding-left: 10px;
+    font-size: 17px;
+    height: 35px;
+}
+input::placeholder{
+   color: #ccc;
+   font-style: italic;
+}
+
+form input[type=text]:nth-of-type(1){
+    position: relative;
+    display: inline-block;
+    width: 90%;
+}
+
+form input:nth-of-type(2),form input:nth-of-type(3){
+    width:calc(45% - 4px) ;
+    margin-right: 4px;
+    position: relative;
+    left: 3px;
+    margin-top: 10px;
+}
+
+form textarea{
+    width: 90%;
+    resize: none;
+    margin-top: 10px;
+    position: relative;
+    left: 2px;
+    height: 150px;
+    color: #ccc;
+    border: 1px solid rgba(200, 200, 200, 1);
+    padding-left: 8px;
+    font-size: 17px;
+    font-weight: normal;
+}
+form textarea::placeholder{
+    color: #ccc;
+}
+
+
+section.venda{
+    min-height: 90%;
+    padding: 90px 0 ;
+}
+
+section.venda .line  > h2{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 27px;
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 0 20px;
+}
+
+.ln1{
+    position: absolute;
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    top: 15px;
+    
+}
+
+.side-bar{
+    float: left;
+    width: 30%;
+    height: auto;
+    
+}
+
+.content-venda{
+    margin-top: 40px;
+    position: relative;
+    left: 140px;
+}
+
+.search1 h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+    
+}
+
+.search1 .barra-preco{
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    margin-top: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+
+}
+ .barra-preco .barra-preco-fil{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 20px;
+    border-radius: 20px;
+    background-image:linear-gradient(to bottom,white,#ccc);
+}
+
+.pointer-barra{
+    position: absolute;
+    left:  0 ;
+    top: -3px;
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    background-color: rgb(210, 210, 210);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+.search1{
+
+    width: 300px;
+}
+
+.valor-pesquisa{
+    margin-top: 8px;
+}
+.valor-pesquisa p:nth-of-type(1){
+    float: left;
+}
+.valor-pesquisa p:nth-of-type(2){
+    float: right;
+}
+.valor-pesquisa p{
+    font-size: 15px;
+    color: black;
+}
+.search2{
+    margin-top: 40px;
+}
+
+
+.search2 h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
+.search2 span{
+    font-weight: bold;
+    padding: 0 10px;
+    vertical-align: top;
+}
+
+.form-venda-wrapper{
+    margin-top: 10px;
+}
+.form-venda-wrapper label{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.form-venda-wrapper input[type=checkbox]:checked + label > .circle{
+    display: block;
+}
+
+.circle{
+    
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: black;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    display: none;
+
+}
+
+.vitrine-venda{
+    width: 70%;
+    float: right;
+    position: relative;
+    bottom: 300px;
+}
+
+.vitrine-venda .vitrine-destaque{
+    margin-top:20px ;
+}
+
+.form-venda-wrapper input[type=checkbox]{
+    display: none;
+}
+
+
+
+@media screen and (max-width:1400px) {
+    section.banner{
+      background-size: 90% auto;
+      background-position: 200% 100%;
+    }
+
+   
+}
+
+@media screen and (max-width:1024px) {
+    section.banner{
+      background-size: cover;
+      background-position: center;
+      height: 70vw;
+      min-width: 500px;
+    }
+
+    
+    
+}
+
+@media screen and (max-width:768px){
+    nav.desktop{
+        display: none;
+    }
+    
+    nav.mobile{
+        display: block;
+    }
+
+    nav.mobile ul{
+        display: none;
+    }
+    
+  
+    
+  
+}
